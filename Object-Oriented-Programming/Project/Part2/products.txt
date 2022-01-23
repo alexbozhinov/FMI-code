@@ -1,0 +1,51 @@
+1
+1
+Tomatoes with cheese
+0.500 kg
+2.69
+2
+0
+Orange juice
+0.500 l
+2.39
+3
+4
+Chicken steak
+0.400 kg
+3.59
+4
+9
+Cake
+0.350 kg
+2.89
+5
+7
+Royal shrimps
+0.500 kg
+7.79
+6
+3
+Borscht
+0.400 kg 
+3.19
+7
+5
+Beef goulash
+0.500 kg
+7.29
+8
+6
+Pork Chops with radishes and charred scallions
+0.400 kg
+6.79
+9
+7
+Steamed salmon
+0.350 kg
+7.39
+10
+1
+French salad
+0.450 kg
+5.79
+
