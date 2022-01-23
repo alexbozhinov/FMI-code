@@ -1,0 +1,74 @@
+#ifndef MYSTRING_H_INCLUDED
+#define MYSTRING_H_INCLUDED
+
+#include<cstring>
+#include<iostream>
+using namespace std;
+
+class MyString{
+
+public:
+    MyString(); //
+    MyString(char );//
+    MyString(const char* );//
+    MyString(const MyString& );//
+    ~MyString();//
+    MyString& operator= (const MyString& );//
+    MyString& operator= (const char* );//
+    char operator[] (int ) const;//
+
+    int getLength()const;//
+    const char* getText()const;//
+
+    void append(char );//
+
+    void print()const;//
+
+
+    friend MyString operator+ (const MyString& , const MyString& );//
+    friend MyString operator+ (const MyString& , const char* );//
+    friend MyString operator+ (const char* , const MyString& );//
+
+
+    MyString& operator+= (const MyString& );//
+    MyString& operator+= (const char* );//
+
+
+    friend bool operator== (const MyString& , const MyString& );//
+    friend bool operator== (const MyString& , const char*   );//
+    friend bool operator== (const char*   , const MyString& );//
+
+
+    friend bool operator> (const MyString& , const MyString& );
+    friend bool operator> (const char*  , const MyString& );
+    friend bool operator> (const MyString&  , const char* );
+
+
+    friend bool operator!= (const MyString& , const MyString&);
+    friend bool operator!= (const char* , const MyString& );
+    friend bool operator!= (const MyString&  , const char* );
+
+
+    friend bool operator< (const MyString& , const MyString& );
+    friend bool operator< (const char*   , const MyString& );
+    friend bool operator< (const MyString&  , const char* );
+
+    bool ifEmpty() const;//
+    const char* c_str()const;//
+
+    friend ostream& operator<< (ostream& , const MyString& );//
+    friend istream& operator>> (istream& , MyString& );//
+
+private:
+    void setText(const char* );//
+    void setLength(const char* );//
+
+   char* str;
+   unsigned int length;
+};
+
+
+
+
+
+#endif // MYSTRING_H_INCLUDED
